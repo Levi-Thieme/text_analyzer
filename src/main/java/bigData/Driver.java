@@ -3,7 +3,6 @@ package bigData;
 import java.io.*;
 
 import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -12,11 +11,6 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.Vector;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.stream.Stream;
-
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -24,8 +18,6 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
-import javax.swing.filechooser.FileSystemView;
-
 import data_producer.DataProducer;
 import data_producer.LineProducer;
 import jobs.SetCount;
@@ -34,21 +26,12 @@ import javax.swing.JTabbedPane;
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
 import javax.swing.BoxLayout;
-import javax.swing.JSplitPane;
-import com.jgoodies.forms.layout.FormLayout;
-import com.jgoodies.forms.layout.ColumnSpec;
-import com.jgoodies.forms.layout.RowSpec;
-import com.jgoodies.forms.layout.FormSpecs;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellEditor;
-import javax.swing.table.TableColumn;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import javax.swing.JScrollPane;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
 import java.awt.Component;
 
 public class Driver {
