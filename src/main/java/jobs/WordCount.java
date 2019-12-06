@@ -63,7 +63,7 @@ public class WordCount implements Job<Object>{
 	}
 	
 	private void writeResults(String path, Map<String, Long> results) {
-		try (FileWriter writer = new FileWriter(path)) {
+		try (FileWriter writer = new FileWriter(path, false)) {
 			for (Entry<String, Long> entry : results.entrySet()) {
 				writer.write(entry.getKey() + "," + entry.getValue() + "\n");
 			}
